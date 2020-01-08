@@ -1,0 +1,135 @@
+.overview {
+    width: 600px;
+    margin: auto;
+    margin-top: 36px;
+    border: 1px none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.5);
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.personal-info > div > p {
+    margin: .25rem 0;
+}
+
+.personal-info > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.progress {
+    background-color: #bdc6d6;
+    width: 80%;
+}
+
+.percentage {
+    background-color: #2e3f5c;
+    padding: 5px;
+    color: white;
+}
+
+.notifications {
+    width: 850px;
+    margin: 32px auto;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+}
+
+.article-collection,
+.section-title {
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.article > h4,
+.article > p > a,
+.article-collection > a,
+h3 > a {
+    transition: .5s all ease;
+}
+
+.article > p > a,
+.article-collection > a {
+    font-style: italic;
+    color: #000efe;
+}
+
+.article-collection > a {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.article > h4:hover,
+.article > p > a:hover,
+.article-collection > a:hover,
+h3 > a:hover {
+    color: #cc0c0c;
+}
+
+.article-collection > a {
+    display: block;
+    padding: 0 0 1rem 0;
+}
+
+.article > p {
+    text-align: justify;
+}
+
+.extra {
+    width: 850px;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.guides,
+.docs {
+    width: 410px;
+    margin: 0 0 32px 0;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+}
+
+@media (max-width: 900px) {
+    .overview {
+        max-width: 600px;
+        width: 90%;
+    }
+
+    .extra {
+        flex-direction: column;
+    }
+
+    .notifications, .extra {
+        max-width: 850px;
+        width: 90%;
+    }
+
+    .guides, .docs {
+        width: 100%;
+    }
+}

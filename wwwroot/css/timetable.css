@@ -1,0 +1,127 @@
+.progress-container {
+    max-width: 675px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 1rem 0 3rem 0;
+    box-shadow: 3px 3px 3rem rgba(0, 0, 0, 0.2);
+}
+
+.progress-container > select {
+    width: 80%;
+}
+
+.progress-container > label {
+    margin-bottom: .75rem;
+}
+
+.percentage > p {
+    padding-left: .5rem;
+}
+
+.timetable {
+    overflow-x: hidden;
+    width: 70rem;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 3rem rgba(0, 0, 0, 0.2);
+}
+
+.dtime {
+    text-align: center;
+    margin: 1.5rem 0;
+    user-select: none;
+}
+
+.select {
+    width: 40%;
+    margin: 1.5rem auto;
+}
+
+select {
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    overflow: scroll;
+    background: white;
+    width: 70rem;
+}
+
+tr {
+    height: 11rem;
+}
+
+th, td {
+    width: 10rem;
+    box-sizing: border-box;
+    padding: .5rem .75rem;
+    height: 3rem;
+    border: .5px solid rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+td {
+    height: 13rem !important;
+}
+
+.subject > strong {
+    font-size: .75rem;
+}
+
+.subject > *, .subject  {
+    transition: 1s all ease;
+    position: relative;
+    user-select: none;
+}
+
+.subject > h4, .subject > span > p {
+    margin: .25rem 0;
+}
+
+.subject { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subject > span {
+    display: none;
+}
+
+td:hover > .subject > span {
+    display: initial;
+}
+
+.lecture > strong, .tutorial > strong {
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 5.5rem;
+    padding: 2px;
+    text-align: center;
+    color: white;
+}
+
+.lecture > strong {
+    background-color: #70cc2e;
+}
+
+.tutorial > strong {
+    background-color: #ff2e70;
+}
+
+
+@media (max-width: 71rem) {
+    .timetable {
+        overflow-x: scroll;
+    }
+}

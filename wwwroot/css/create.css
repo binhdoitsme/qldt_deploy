@@ -1,0 +1,54 @@
+﻿.form-container {
+    background: white;
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > .section-title::after {
+    margin: .5rem 0;
+}
+
+form > div {
+    margin: .25rem 0;
+    width: fit-content;
+}
+
+div > p, label {
+    margin: 0.25rem;
+    padding: 0 !important;
+}
+
+#new-class {
+    margin: 0.5rem 0;
+}
+
+form > div > * {
+    padding: 4px 8px;
+}
+
+form > div:last-of-type {
+    display: flex;
+    align-items: center;
+}
+form > div > a:last-of-type {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    /*background: #ddd;*/
+    /*height: 3rem;*/
+    margin-left: 1rem;
+}
+input, select {
+    border-radius: 2px;
+    border: .5px solid;
+    padding: 2px;
+}

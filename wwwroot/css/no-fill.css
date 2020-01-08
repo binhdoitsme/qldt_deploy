@@ -1,0 +1,27 @@
+﻿
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar + div {
+    height: 80vh;
+    /*overflow-y: scroll;*/
+}
+
+body {
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 470px) {
+    html {
+        font-size: 12px;
+    }
+}

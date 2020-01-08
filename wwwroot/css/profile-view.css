@@ -1,0 +1,42 @@
+﻿.main-container {
+    width: 95%;
+    max-width: 850px;
+    background: white;
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: 3px 3px 3rem #bbb;
+}
+
+.section-title {
+    padding: 0;
+}
+
+.personal-info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.personal-info-container > img {
+    width: 45%;
+    object-fit: scale-down;
+}
+
+.personal-info-container > div {
+    width: 45%;
+}
+
+.personal-info-container > div > h3 {
+    margin-top: 0;
+}
+
+.account-info-container {
+    margin-top: 1rem;
+}
+
+button {
+    margin: 0;
+}

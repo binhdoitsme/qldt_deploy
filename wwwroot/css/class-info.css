@@ -1,0 +1,12 @@
+﻿.class-info-container {
+    background: #ffffff;
+    padding: 3rem;
+}
+
+.button:not(.toggle) {
+    background: #CFCFCF !important;
+}
+
+.button::before {
+    content: '' !important;
+}

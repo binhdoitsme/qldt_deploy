@@ -1,0 +1,70 @@
+.tuifee-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    max-width: 850px;
+    background: #fff;
+    box-shadow: 3px 3px 3rem rgba(0,0,0,.2);
+}
+
+.tuifee-report > div:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 850px;
+}
+
+.tuifee-report > div > h2 {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.tuifee-report > div > h4 {
+    margin: .25rem 0;
+    width: 40%;
+}
+
+.tuifee-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 850px;
+    margin: 3rem 0;   
+}
+
+.tuifee-head > *, .tuifee-line > * {
+    padding: 8px 12px;
+    margin: 0;
+    border: .5px solid rgba(0, 0, 0, 0.5);
+}
+
+tfoot > tr > th {
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+tfoot > tr > td:last-of-type, tbody > tr > td:last-child, tbody > tr > td:first-child {
+    text-align: right;
+    padding: .5rem 1rem;
+}
+
+tfoot > tr > td:last-of-type {
+    font-weight: bold;
+}
+
+.tuifee-report > h4 {
+    width: 80%;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+    text-align: justify;
+}
+
+.invisible {
+    display: none;
+}

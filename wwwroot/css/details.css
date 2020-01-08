@@ -1,0 +1,7 @@
+﻿form > a:last-of-type {
+    /*height: 3rem;*/
+    background: #ddd;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+}

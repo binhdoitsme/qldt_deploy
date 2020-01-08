@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Roboto:100&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #efefef;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body > div {
+    align-items: center;
+}
+
+img, button, .progress, .footer, .scroll-top {
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: #333;
+    color: #f8f9fa;
+    justify-content: space-around;
+    /* transition: 1s all ease; */
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.navbar > ul > a > img {
+    height: 100%;
+}
+
+.navbar > ul {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.navbar > ul > *, .navbar > .sidebar > ul > * {
+    list-style: none;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: .5s all ease;
+}
+
+.navbar > ul > *:hover, .navbar > .sidebar > ul > *:hover {
+    color: #fff000;
+    background-color: #AA1D2A;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s all ease;
+    user-select: none;
+}
+
+#profile > * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#profile > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#profile > div > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#profile > ul {
+    display: none;
+    width: 100%;
+    background-color: #303033;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    z-index: 1;
+    color: #f8f9fa;
+}
+
+#profile > ul > * {
+    padding: 8px 12px;
+    transition: .5s all ease;
+}
+
+#profile > ul > * > * {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#profile:hover,
+#profile > ul > *:hover {
+    color: #000;
+    background-color: #fffeff;
+}
+
+#profile:hover ul {
+    display: inline-block;
+    position: relative;
+}
+
+#profile > ul > * {
+    list-style: none;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.sidebar {
+    display: none;
+}
+
+.percentage > p {
+    margin: 0;
+    width: max-content;
+    text-shadow: 2px 2px 20px #555;
+}
+
+.course-reg, button, .button, .dashboard-option {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 16px 0;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    transition: .5s all ease;
+    user-select: none;
+}
+
+/*input.button {
+    height: 3rem;
+}*/
+
+.button {
+    background: #CFCFCF;
+}
+
+button:disabled, .button:disabled {
+    cursor: default;
+}
+
+.course-reg:hover, button:hover:not([disabled]), .button:hover:not([disabled]), .dashboard-option:hover {
+    color: whitesmoke;
+    background-color: #2e3f5c;
+}
+
+.section-title > h3 {
+    margin-bottom: .75rem;
+}
+
+.section-title::after {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #000000;
+    content: '';
+}
+
+.footer {
+    font-size: .75rem;
+    color: #fff;
+    background-color: #303033;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer > p {
+    width: 850px;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.scroll-top {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 3rem;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    transition: .25s all ease;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    bottom: -40px;
+}
+
+.scroll-top > h3 {
+    margin: 0;
+    font-family: monospace;
+}
+
+.scroll-top:hover {
+    color: black;
+    background-color:white;
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.5);
+}
+
+.invisible {
+    display: none;
+}
+
+#alert, .alert {
+    color: red;
+    font-style: italic;
+    border: none !important;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+input, select, select > * {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.admin {
+    background-color: #FBC702;
+}
+
+.mod {
+    background-color: #00EEA0;
+}
+
+.info-container {
+    background: white;
+    padding: 3rem;
+    width: 65%;
+    max-width: 750px;
+}
+
+@media (max-width: 1225px) {
+    #profile {
+        width: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .navbar > ul {
+        display: none;
+    }
+
+    .navbar > #profile, .navbar > #profile > * {
+        width: 300px;
+    }
+
+    .sidebar {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .sidebar > ul {
+        display: flex !important;
+        flex-direction: column;
+        background: #333;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 80px;
+        height: 100vh;
+        width: 80vw !important;
+        transition: .5s ease all;
+        user-select: none;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .inactive {
+        width: 0vw;
+        left: -1000%;
+    }
+
+    .sidebar > ul > * {
+        list-style-type: none;
+        height: 2rem !important;
+        padding: 2rem 2rem 2rem 3rem !important;
+    }
+
+    .sidebar-toggle {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s all ease;
+    }
+
+    .sidebar-toggle > img {
+        width: 40px;
+        height: 40px;
+        transition: .5s all ease;
+    }
+
+    .sidebar-toggle:hover > img {
+        content: url('../img/more_.png');
+    }
+
+    .sidebar-toggle:hover {
+        background: white;
+    }
+
+    .footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer > p {
+        width: 100%;
+        padding: 0 2rem !important;
+    }
+}

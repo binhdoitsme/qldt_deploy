@@ -1,0 +1,115 @@
+.course-catalog-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.course-catalog {
+    width: 90%;
+    max-width: 70rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    /*justify-content: center;*/
+}
+
+.course-detail {
+    width: 13rem;
+    min-width: 13rem;
+    height: 21rem;
+    border: .5px solid rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    user-select: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+}
+
+.course-detail > h3 {
+    margin-top: .5rem;
+}
+
+.course-detail > button {
+    width: 100%;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.interact-buttons {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.interact-buttons > button {
+    font-size: 1.1rem;
+    background: #CFCFCF;
+}
+
+.addon {
+    margin-top: .5rem !important;
+}
+
+.compulsory {
+    color: #e32541;
+    font-weight: bold;
+}
+
+.selected, .new-select {
+    background: #9fdefd;
+}
+
+.selected > .prerequisite {
+    display: none;
+}
+
+.selected > .course-pick-button {
+    display: none;
+}
+
+.selected > .invisible {
+    display: block;
+    margin-top: .5rem !important;
+}
+
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+}
+
+.modal-content > p {
+    text-align: center;
+}
+
+.modal-content > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-content > div > button {
+    width: 6rem;
+    box-sizing: border-box;
+}
+
+small {
+    font-weight: bold;
+    font-size: small;
+}

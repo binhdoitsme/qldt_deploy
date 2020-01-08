@@ -1,0 +1,75 @@
+.grades-table-container {
+    background: white;
+    width: 95%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3rem rgba(0, 0, 0, .2);
+    padding: 1rem 2rem;
+}
+
+.grades-table-container > .section-title {
+    padding: 0;
+}
+
+.grades-table-container > p > select {
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 4px;
+    padding-left: 4px;
+    transition: 1s all ease;
+}
+
+option {
+    border-radius: 8px;
+}
+
+.grades-table-container > .grades-table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+th, td {
+    border: .5px solid;
+    box-sizing: border-box;
+    padding: .5rem;
+    max-width: 5rem;
+    width: 5rem;
+    font-size: .9rem;
+    text-align: center;
+}
+
+td:nth-child(1), th:nth-child(1) {
+    width: 2rem;
+}
+
+td:nth-child(1) {
+    text-align: right;
+}
+
+tr > td:nth-child(2), tr > th:nth-child(2) {
+    min-width: 14rem;
+    text-align: left;
+}
+
+.grades-table-container > .interact-buttons > button {
+    margin-bottom: .5rem;
+    margin-top: .25rem;
+}
+
+.passed {
+    background-color: #22ee72;
+}
+
+.failed {
+    background-color: #ee5272;
+}
+
+@media (max-width: 750px) {
+    .grades-table-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}

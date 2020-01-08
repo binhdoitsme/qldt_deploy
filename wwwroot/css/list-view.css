@@ -1,0 +1,74 @@
+﻿.list-container {
+    width: 90%;
+    max-width: 1024px;
+    min-height: 80vh;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid;
+    padding: .5rem;
+}
+
+tr {
+    width: 100%
+}
+
+td, tr {
+    border-collapse: separate;
+    margin: 0;
+    border: .5px solid black;
+    height: 2rem;
+}
+
+td {
+    padding: 8px;
+    text-align: justify;
+}
+
+td > a {
+    display: block;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    text-align: center;
+}
+
+td:nth-child(1) {
+    text-align: right;
+}
+
+table + a, div > a, div > button:not(.modal-button) {
+    display: inline-flex;
+    align-items: center;
+    /*height: 2rem !important;*/
+    background: #00eea0 !important;
+}
+
+div > button {
+    height: initial !important;
+}
+
+table + a::before, div > a::before, div > button:not(.modal-button)::before {
+    content: "+";
+    padding: 0 4px 2px 0;
+    font-size: 2rem;
+}
+
+.return::before {
+    content: "◄" !important;
+}
+
+@media screen and (max-width: 535px) {
+    .list-container {
+        overflow-x: scroll;
+    }
+}

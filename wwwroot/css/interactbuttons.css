@@ -1,0 +1,14 @@
+
+.interact-buttons {
+    max-width: 24rem;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.interact-buttons > button {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}

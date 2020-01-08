@@ -1,0 +1,25 @@
+﻿form
+{
+    width: 85%;
+    max-width: 850px;
+    padding: 3rem;
+    background: white;
+}
+
+form > div
+{
+    padding: .5rem 0;
+}
+
+label + input, label + textarea
+{
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+#content
+{
+    height: 15rem;
+    resize: none;
+}
